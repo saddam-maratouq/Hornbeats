@@ -14,7 +14,9 @@ class footer extends React.Component{
 
     
    <div>
-         &copy; Saddam maratouq    
+        <p>  Auoter :  Saddam maratouq  </p>     
+        
+        
          </div>
   )
   }

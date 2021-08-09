@@ -2,18 +2,22 @@ import React from 'react';
 
 import './Main.css'
 
-import Image from './Image'
+import Hornbeats from './Hornbeats';
+
+import footer from   './Footer'
+
 
 class Main extends React.Component {
   render() {
   return(
 
-    
-   <Image/>
+    <div>   
+   <Hornbeats/>
 
+   <footer />
    
 
-
+   </div>
   )
   }
 }
