@@ -1,6 +1,12 @@
 import React from 'react' ; 
 import Header from './componants/Header.js';
 import Main from './componants/Main.js';
+
+
+
+
+
+ 
 class App extends React.Component{
   render() {
   return(
@@ -10,6 +16,7 @@ class App extends React.Component{
      
       <Header/> 
       <Main/>
+
 
       </div>
   )

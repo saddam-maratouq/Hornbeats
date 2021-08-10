@@ -2,10 +2,16 @@ import React from 'react';
 
 import './Main.css'
 
+
 import Hornbeats from './Hornbeats';  
 
 import Footer from './Footer'; 
 
+
+import Hornbeats from './Hornbeats';
+
+import Footer from   './Footer';
+ 
 
 
 class Main extends React.Component {
