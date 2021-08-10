@@ -8,15 +8,16 @@ import React from 'react';
 
 
 
-class footer extends React.Component{
+class Footer extends React.Component{
   render() {
   return(
 
     
    <div>
-         &copy; Saddam maratouq    
+         Autouer : Saddam maratouq    
+        
          </div>
   )
   }
 }
-export default footer ; 
+export default Footer ; 
