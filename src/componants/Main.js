@@ -4,7 +4,9 @@ import './Main.css'
 
 import Hornbeats from './Hornbeats';  
 
-import Footer from './Footer';
+import Footer from './Footer'; 
+
+
 
 class Main extends React.Component {
   render() {
