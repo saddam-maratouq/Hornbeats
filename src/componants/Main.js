@@ -7,6 +7,8 @@ import Hornbeats from './Hornbeats';
 
 import Footer from './Footer'; 
 
+import Model from './Model'
+
 
  
 
@@ -37,6 +39,9 @@ class Main extends React.Component {
                 width='200px' height='350'
                 descrbtion='Someone wearing a creepy unicorn head mask'/>
    <Footer/>
+
+   <Model      hornIamge  = 'http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg' 
+                            />
    
 
    </div>
