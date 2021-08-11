@@ -8,6 +8,8 @@ import Card from 'react-bootstrap/Card'
 
 import Button from 'react-bootstrap/Button' 
 
+import Model from './Model';
+
 
 
 
@@ -50,6 +52,7 @@ class Hornbeats  extends React.Component{
 
                 <h2>    {this.props.title}         </h2> 
 
+
                 {/* <h2>    {this.props.title}         </h2> 
 
         
@@ -81,6 +84,9 @@ class Hornbeats  extends React.Component{
                                                                                 <Button  onClick={this.increse} variant="primary"> Vote </Button>
                                                                             </Card.Body>
                                                                             </Card>
+
+                <Model/>
+
             </div>       
                 
         )

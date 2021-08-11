@@ -1,7 +1,9 @@
 import React from 'react';
 
 import {Modal,Button} from 'react-bootstrap/'
-import Hornbeats from './Hornbeats';
+
+import Card from 'react-bootstrap/Card' 
+
 
 
 
@@ -45,7 +47,18 @@ class Model  extends React.Component{
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>    </Modal.Body> 
+        <Modal.Body>  
+        <Card.Title> {this.props.title}  </Card.Title>
+                                                                            <Card.Img variant="top" src={this.props.hornIamge} />
+                                                                            <Card.Body>
+                                                                                <Card.Text>
+                                                                               ❤ number of hourn = {this.state.NumberofHorn}  
+                                                                                </Card.Text>
+                                                                                <Button  onClick={this.increse} variant="primary"> Vote </Button>
+                                                                            </Card.Body>
+                                                                            
+            
+              </Modal.Body> 
         <Modal.Footer>
           <Button variant="secondary" onClick={true}>
             Close
