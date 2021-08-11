@@ -43,7 +43,7 @@ class Model  extends React.Component{
         Launch demo modal
       </Button>
 
-      <Modal show={true} onHide={false}>
+      <Modal show={false} onHide={false}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
