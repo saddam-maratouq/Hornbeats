@@ -47,7 +47,7 @@ class Hornbeats extends React.Component {
                         <p>  number of hourn ={this.state.NumberofHorn} </p> */}
 
         <Card style={{ width: "18rem" }}>
-          <Card.Title> {this.props.title} </Card.Title>
+          {/* <Card.Title> {this.props.title} </Card.Title> */}
           <Card.Img variant="top" src={this.props.hornIamge} />
           <Card.Body>
             <Card.Text>❤ number of hourn = {this.state.NumberofHorn}</Card.Text>
