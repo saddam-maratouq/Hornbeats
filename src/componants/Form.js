@@ -1,112 +1,104 @@
 
 
-import React from 'react'
+// import React from 'react'
 
-import Form from "react-bootstrap/Form";
+// import Form from "react-bootstrap/Form";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-import ImageData from "./ImageData.json";
+// import ImageData from "./ImageData.json";
 
-import Hornbeats from "./Hornbeats";
-
-
-
-class MForm extends React.Component {
+// import Hornbeats from "./Hornbeats";
 
 
-    constructor(props) {
-
-        super(props)
-        this.state = {
-            horn: "1",
-            hornData: ImageData
 
 
-        }
-    }
+
+// class MForm extends React.Component {
 
 
-    DisplayHorn = (e) => {
+//     constructor(props) {
 
-        e.preventDefault();
-
-        this.setState({
-
-            horn: e.target.value,
-        })
-        //    this.FilterHorn();
-    }
+//         super(props)
+//         this.state = {
+//             horn: "1",
+//             hornData: ImageData
 
 
-    // FilterHorn = () => {
-
-    //     if (this.state.horn === "All") {
-            
-    //             this.setState({
-    //         hornData: ImageData
-            
-
-    //             });
-    //     }
-    // }
-
-    render() {
-        return (
-            <div>
-
-                <h3> Select Hornes  </h3>
-                <Form.Select onChange={this.DisplayHorn} Name='horns' aria-label="Default select example">
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="100"  >    hundred    </option>
-                    <option value="All"> ALL  </option>
+//         }
+//     }
 
 
-                </Form.Select>
+//     DisplayHorn = (e) => {
+
+//         e.preventDefault();
+
+//         this.setState({
+
+//             horn: e.target.value,
+//         })
+        
+//     }
 
 
-                {this.state.hornData.map((item,idx) => {
+    
 
-                if (this.state.horn == item.horns) { 
+//     render() {
+//         return (
+//             <div>
+
+//                 <h3> Select Hornes  </h3>
+//                 <Form.Select onChange={this.DisplayHorn} Name='horns' aria-label="Default select example">
+//                     <option value="1">One</option>
+//                     <option value="2">Two</option>
+//                     <option value="3">Three</option>
+//                     <option value="100"  >    hundred    </option>
+//                     <option value="All"> ALL  </option>
 
 
-                    return (
+//                 </Form.Select>
 
-                <Hornbeats
-                    title={item.title}
-                    keyword={item.keyword}
-                    hornIamge={item.image_url}
-                    horns={item.horns}
-                    description={item.description}
-                />
 
-                )
-                    }
-                    
-                    else if ( this.state.horn ===  "All"   ){
-                    return (
+//                 {this.state.hornData.map((item,idx) => {
+
+//                 if (this.state.horn == item.horns) { 
+
+
+//                     return (
+
+//                 <Hornbeats
+//                     title={item.title}
+//                     keyword={item.keyword}
+//                     hornIamge={item.image_url}
+//                     horns={item.horns}
+//                     description={item.description}
+//                 />
                         
-                        <Hornbeats
-                        title={item.title}
-                        keyword={item.keyword}
-                        hornIamge={item.image_url}
-                        horns={item.horns}
-                        description={item.description}
-                    />
-                    ) 
-                }
+//                 )
+//                     }
                     
-            }
-                )
-            }
+//                     else if ( this.state.horn ===  "All"   ){
+//                     return (
+                        
+//                         <Hornbeats
+//                         title={item.title}
+//                         keyword={item.keyword}
+//                         hornIamge={item.image_url}
+//                         horns={item.horns}
+//                         description={item.description}
+//                     />
+//                     ) 
+//                 }
+                    
+//             }
+//                 )
+//             }
 
 
 
-            </div>
-        )
-    }
-}
+//             </div>
+//         )
+//     }
+// }
 
-export default MForm;
+// export default MForm;
